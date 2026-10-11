@@ -1,0 +1,645 @@
+:root {
+    --color-primary: #8B0000;       /* Rojo institucional vino tinto oficial */
+    --color-primary-dark: #5c0000;  /* Rojo oscuro profundo */
+    --color-secondary: #8B0000;     
+    --color-bg-dark: #FFFFFF;       
+    --color-bg-light: #F8F9FA;      
+    --color-white: #FFFFFF;
+    --color-text-main: #212529;     
+    --color-text-muted: #6C757D;    
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background-color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    background-color: #FFFFFF; /* Fondo blanco interno para enmarcar el escudo */
+    border-radius: 50%;       /* Forma circular elegante para el logo */
+    padding: 3px;             /* Margen interno para que el escudo respire */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo-text span {
+    font-size: 0.7rem;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.logo-text h1 {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: #FFD700 !important; /* Amarillo brillante para destacar */
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700 !important;
+}
+
+.btn-inscripcion {
+    background-color: #FFD700 !important;
+    color: #212529 !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 700 !important;
+    transition: transform 0.2s ease !important;
+}
+
+.btn-inscripcion:hover {
+    transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(139, 0, 0, 0.9), rgba(92, 0, 0, 0.95)), url('portada.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.subtitle {
+    display: inline-block;
+    background: rgba(255, 215, 0, 0.2);
+    color: #FFD700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.hero-content h2 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h2 span {
+    color: #FFD700;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #f1f5f9;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    color: #212529;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e5c100;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 2.2rem;
+    color: #FFD700 !important;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.stat-box p {
+    color: #FFFFFF !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* SECCIÓN INSTITUCIÓN & TABS */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.section-header-tag {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.institution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.institution-img-container {
+    height: 100%;
+    min-height: 380px;
+}
+
+.historia-img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: opacity 0.3s ease-in-out; /* <-- Añade esta línea para suavizar el cambio de foto */
+}
+
+.tabs-nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.tab-content {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    transition: opacity 0.3s ease;
+}
+
+/* VALORES */
+.values-section {
+    background-color: #f8fafc;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.value-card span {
+    font-size: 2rem;
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.value-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+    color: #1e293b;
+}
+
+.value-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* OFERTA ACADÉMICA */
+.academic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.academic-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    position: relative;
+}
+
+.tecnica-full-card {
+    grid-column: span 2;
+    background: linear-gradient(to bottom right, #ffffff, #fff5f5);
+    border-left: 6px solid var(--color-primary);
+}
+
+.academic-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(139, 0, 0, 0.1);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.grade-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.5px;
+}
+
+.academic-card h3 {
+    font-size: 1.3rem;
+    margin: 0.3rem 0 0.8rem 0;
+    color: #1e293b;
+}
+
+.academic-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.tecnica-list {
+    list-style: none;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.tecnica-list li {
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.tecnica-list i {
+    color: var(--color-primary);
+    margin-right: 6px;
+}
+
+/* PROCESO DE MATRÍCULA / INSCRIPCIONES PROFESIONAL */
+.admissions-section {
+    background-color: #f8fafc;
+}
+
+.admissions-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.steps-card, .docs-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1.5rem;
+}
+
+.steps-card h3, .docs-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+    color: #1e293b;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.step-number {
+    width: 28px;
+    height: 28px;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.docs-list {
+    padding-left: 1.2rem;
+    color: #475569;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.form-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.form-toggle {
+    display: flex;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.toggle-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 0.7rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #64748b;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.toggle-btn.active {
+    background: white;
+    color: var(--color-primary);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: all 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+
+.btn-submit {
+    margin-top: 1.5rem;
+    background: var(--color-primary);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--color-primary-dark);
+}
+
+.form-footer-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+}
+
+/* CONTACTO */
+.contact-section {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.contact-card p {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+}
+.contact-card.interactive-card {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-card.interactive-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .hero-container, .institution-grid, .admissions-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h2 {
+        font-size: 2.3rem;
+    }
+    .nav-links {
+        display: none;
+    }
+    .tecnica-full-card {
+        grid-column: span 1;
+    }
+    .tecnica-list {
+        grid-template-columns: 1fr;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+}

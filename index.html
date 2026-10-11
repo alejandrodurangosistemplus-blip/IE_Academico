@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa Académico - Buga</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="img/escudo.jpg" alt="Escudo" class="logo-img">
+                <div class="logo-text">
+                    <span>Institución Educativa</span>
+                    <h1>Académico Buga</h1>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#institucion">Institución</a>
+                <a href="#programas">Programas</a>
+                <a href="#inscripciones">Inscripciones</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#inscripciones" class="btn-inscripcion">Inscríbete</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="subtitle">Institución Educativa Académico — Fundada en 1743</span>
+                <h2>Formando <span>Hoy, mañana y siempre</span></h2>
+                <p>La Institución Educativa Académica ofrece educación de calidad desde preescolar hasta grado 11, con énfasis en excelencia académica, valores y preparación para la vida universitaria.</p>
+                <div class="hero-buttons">
+                    <a href="#inscripciones" class="btn-primary">Proceso de Inscripción</a>
+                    <a href="#institucion" class="btn-outline">Conoce la institución</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <h3>1.000+</h3>
+                    <p>Estudiantes activos</p>
+                </div>
+                <div class="stat-box">
+                    <h3>283</h3>
+                    <p>Años de trayectoria</p>
+                </div>
+                <div class="stat-box">
+                    <h3>98%</h3>
+                    <p>Tasa de graduación</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+ de 63</h3>
+                    <p>Docentes titulados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 01: NUESTRA INSTITUCIÓN -->
+    <section id="institucion" class="institution-section">
+        <div class="section-container">
+            <span class="section-header-tag">01 — Nuestra Institución</span>
+            <h2 class="section-title">Varias décadas construyendo futuro</h2>
+            
+            <div class="institution-grid">
+                <!-- Contenedor dinámico de la imagen -->
+                <div class="institution-img-container">
+                    <img id="tab-image" src="img/antiguo.jpg" alt="Institución Educativa Académico" class="historia-img">
+                </div>
+                <div>
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" onclick="switchTab('historia')">Historia</button>
+                        <button class="tab-btn" onclick="switchTab('mision')">Misión</button>
+                        <button class="tab-btn" onclick="switchTab('vision')">Visión</button>
+                        <button class="tab-btn" onclick="switchTab('himno')">Himno</button>
+                        <button class="tab-btn" onclick="switchTab('proyectos')">Proyectos</button>
+                        <button class="tab-btn" onclick="switchTab('nosotros')">Nosotros</button>
+                    </div>
+                    <div id="tab-body" class="tab-content">
+                        En el nuevo colegio de los Jesuitas, se dictan clases hasta 1.767 cuando la compañía religiosa es expulsada de España y todos sus dominios en América a consecuencia de la aplicación de las reformas borbónicas. En las primeras décadas del siglo XIX a raíz de las luchas por la independencia el Colegio presenta períodos de poca duración por constantes cierres, reiniciando labores en 1.826.
+
+                        En 1.859, el colegio Académico establece su reglamento orgánico para la enseñanza secundaria, renovándose en 1.864 con el nombre de Colegio Mayor de Buga.
+
+                        En 1.866 se establecen las facultades de Medicina y Cirugía. Entre los años 1.867 y 1.883, el colegio recibe una valiosa ayuda económica de $1.000.oo (Mil pesos) del estado soberano del Cauca, pero en 1.884, tanto los planes de estudio como el reglamento orgánico son orientados por el gobierno nacional, siendo esta la primera imposición administrativa de la nación, con lo cual se afecta la autonomía del colegio en cuanto a Educación Superior.
+
+                        En 1.910, se crea una nueva biblioteca para el colegio con aportes bibliográficos del Presbítero Daniel Montoya Payan y el Doctor Alejandro Cabal Pombo, ya que durante el siglo XIX la biblioteca existente fue víctima de constantes saqueos e incendios por efectos de las distintas guerras civiles, toda vez que el edificio de la nación era convertido en Cuartel Militar.
+
+                        En 1.912, se dispone para el Colegio la Instrucción Secundaria y se le da autonomía para manejar sus propias rentas, que se le quita al año siguiente (1.913) convirtiéndola en el LICEO PÚBLICO DE BUGA, situación ésta que duró poco, porque nuevamente en 1.914 se le devuelve la solidez y autonomía bajo la administración de una fundación que demuestra capacidades para el manejo tanto de sus bienes como de los programas de enseñanza superior permitiéndole crear posteriormente la Facultad de Bacteriología.
+
+                        En la décadas de 1.930 y 1.940, fueron acontecimientos destacables para la vida de la institución: La creación del Consejo de Estudiante (1.933) y la inclusión de la enseñanza del deporte en los programas educativos (1.945), destacándose la práctica de natación en las aguas del Rio Guadalajara, en horas de la tarde.
+
+                        En la década de 1.950-1.960, el colegio era un establecimiento de enseñanza clásica. Clases magistrales, disciplina centrada en castigos, llegando hasta la expulsión. Se le daba mucha importancia a los actos solemnes, se enseñaban materias reglamentarias con un carácter muy confesional propio de la época. Se exaltaban los valores patrios, los cívicos y los religiosos. El colegio vivió en 1.950 el gran acontecimiento de la creación de la Banda Filarmónica.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 02: VALORES INSTITUCIONALES -->
+    <section class="values-section">
+        <div class="section-container">
+            <span class="section-header-tag">02 — Valores Institucionales</span>
+            <h2 class="section-title" style="margin-bottom: 2rem;">Los principios que nos guían</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <span>01</span>
+                    <h3>Excelencia</h3>
+                    <p>Comprometidos con los más altos estándares académicos y éticos en cada proceso educativo.</p>
+                </div>
+                <div class="value-card">
+                    <span>02</span>
+                    <h3>Inclusión</h3>
+                    <p>Valoramos la diversidad y garantizamos igualdad de oportunidades para toda la comunidad.</p>
+                </div>
+                <div class="value-card">
+                    <span>03</span>
+                    <h3>Innovación</h3>
+                    <p>Integramos tecnología y metodologías activas para preparar ciudadanos del siglo XXI.</p>
+                </div>
+                <div class="value-card">
+                    <span>04</span>
+                    <h3>Responsabilidad</h3>
+                    <p>Formamos personas íntegras, conscientes de su rol en la sociedad y el medio ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 03: OFERTA ACADÉMICA -->
+    <section id="programas" class="academic-section">
+        <div class="section-container">
+            <span class="section-header-tag">03 — Oferta Académica</span>
+            <h2 class="section-title">Niveles educativos</h2>
+            <p style="color: #64748b; max-width: 600px; margin-bottom: 2rem;">Ofrecemos educación completa desde preescolar hasta grado 11 con énfasis en ciencias, humanidades y formación técnica especializada.</p>
+            
+            <div class="academic-grid">
+                <div class="academic-card">
+                    <div class="academic-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <span class="grade-tag">Jardin y Transición</span>
+                    <h3>Preescolar</h3>
+                    <p>Formación integral temprana con enfoque en desarrollo cognitivo, emocional y social del niño.</p>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <span class="grade-tag">1° a 5°</span>
+                    <h3>Básica Primaria</h3>
+                    <p>Cimientos académicos sólidos con metodologías activas, lectura crítica y pensamiento lógico-matemático.</p>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-icon"><i class="fa-solid fa-flask"></i></div>
+                    <span class="grade-tag">6° a 9°</span>
+                    <h3>Básica Secundaria</h3>
+                    <p>Profundización en ciencias, humanidades, arte y tecnología con proyectos interdisciplinarios.</p>
+                </div>
+                <div class="academic-card tecnica-full-card">
+                    <div class="academic-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="grade-tag">10° y 11°</span>
+                    <h3>Media Técnica Especializada</h3>
+                    <p>Contamos con formaciones técnicas de alta calidad orientadas al éxito profesional y laboral:</p>
+                    <ul class="tecnica-list">
+                        <li><i class="fa-solid fa-check"></i> <strong>Operaciones Logística:</strong> Gestión de cadenas de suministro y procesos operativos.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Contabilidad y Finanzas:</strong> Fundamentos contables y administración de recursos.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Deportivo:</strong> Entrenamiento físico, salud y liderazgo deportivo.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Ambiental:</strong> Sostenibilidad, ecología y gestión ambiental.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Musical:</strong> Expresión artística, teoría y práctica instrumental.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 04: PROCESO DE MATRÍCULA / INSCRIPCIONES -->
+    <section id="inscripciones" class="admissions-section">
+        <div class="section-container">
+            <span class="section-header-tag">04 — Proceso de Matrícula</span>
+            <h2 class="section-title">Inscripciones 2026</h2>
+            <p style="color: var(--color-text-muted); max-width: 650px;">Complete el formulario para iniciar su proceso de inscripción o solicitar más información. Nos comunicaremos contigo en menos de 24 horas.</p>
+            
+            <div class="admissions-container">
+                <!-- Columna Izquierda: Pasos y Documentos -->
+                <div class="admissions-info">
+                    <div class="steps-card">
+                        <h3>Pasos para inscribirse</h3>
+                        <div class="steps-list">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <span>Diligencia el formulario en línea</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <span>Recibe confirmación por correo</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <span>Entrega de documentos en secretaría</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <span>Entrevista con coordinación</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">5</div>
+                                <span>Formaliza la matrícula</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="docs-card">
+                        <h3>Documentos requeridos</h3>
+                        <ul class="docs-list">
+                            <li>Registro civil o tarjeta de identidad</li>
+                            <li>Certificados de notas anteriores</li>
+                            <li>Paz y salvo de la institución previa</li>
+                            <li>Fotocopia de cédula de los padres</li>
+                            <li>Certificado de afiliación a EPS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Formulario interactivo Profesional -->
+                <div class="form-card">
+                    <div class="form-toggle">
+                        <button class="toggle-btn active" id="btnInscribirme">Quiero inscribirme</button>
+                        <button class="toggle-btn" id="btnInfo">Solicitar información</button>
+                    </div>
+
+                    <form id="admissionForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Nombre *</label>
+                                <input type="text" placeholder="Ej: Juan Sebastián" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Apellido *</label>
+                                <input type="text" placeholder="Ej: Martínez López" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Correo Electrónico *</label>
+                                <input type="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono / Celular *</label>
+                                <input type="tel" placeholder="300 000 0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nivel Educativo *</label>
+                                <select required>
+                                    <option value="">Selecciona un nivel</option>
+                                    <option value="preescolar">Preescolar</option>
+                                    <option value="primaria">Básica Primaria (1° - 5°)</option>
+                                    <option value="secundaria">Básica Secundaria (6° - 9°)</option>
+                                    <option value="media">Media Técnica (10° - 11°)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Grado de Interés *</label>
+                                <select required>
+                                    <option value="">Selecciona un grado</option>
+                                    <option value="jardin">Jardin</option>
+                                    <option value="transicion">Transición</option>
+                                    <option value="primero">Primero</option>
+                                    <option value="segundo">Segundo</option>
+                                    <option value="tercero">Tercero</option>
+                                    <option value="cuarto">Cuarto</option>
+                                    <option value="quinto">Quinto</option>
+                                    <option value="sexto">Sexto</option>
+                                    <option value="septimo">Séptimo</option>
+                                    <option value="octavo">Octavo</option>
+                                    <option value="noveno">Noveno</option>
+                                    <option value="decimo">Décimo (Técnica)</option>
+                                    <option value="undecimo">Undécimo (Técnica)</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Mensaje adicional</label>
+                                <textarea rows="3" placeholder="Cuéntanos sobre el estudiante, preguntas o necesidades particulares..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar solicitud de inscripción →</button>
+                        <p class="form-footer-note">Tu información es confidencial y tratada con seguridad.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 05: CONTÁCTENOS -->
+    <section id="contacto" class="contact-section">
+        <div class="section-container" style="text-align: center;">
+            <span class="section-header-tag" style="color: #FFD700;">05 — Contáctenos</span>
+            <h2 class="section-title" style="color: var(--color-white);">Estamos para atenderte</h2>
+            <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto;">Visítanos, llámanos o escríbenos. Con gusto resolveremos todas tus inquietudes.</p>
+            
+            <div class="contact-grid">
+                <!-- Dirección -> Google Maps -->
+                <a href="https://maps.google.com/?q=Institucion+Educativa+Academico+Buga" target="_blank" class="contact-card interactive-card" style="text-decoration: none;">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Dirección</h3>
+                    <p>Guadalajara de Buga<br>Valle del Cauca, Colombia</p>
+                </a>
+
+                <!-- Teléfono -> WhatsApp -->
+                <a href="https://wa.me/573186296926" target="_blank" class="contact-card interactive-card" style="text-decoration: none;">
+                    <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp / Teléfono</h3>
+                    <p>+57 318 629 6926<br>¡Escríbenos aquí!</p>
+                </a>
+
+                <!-- Correo -> Enlace directo a Gmail Web -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ieacademicobuga@gmail.com" target="_blank" class="contact-card interactive-card" style="text-decoration: none;">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Correos</h3>
+                    <p>ieacademicobuga@gmail.com<br>Atención institucional</p>
+                </a>
+
+                <!-- Redes Sociales -> Facebook -->
+                <a href="https://www.facebook.com" target="_blank" class="contact-card interactive-card" style="text-decoration: none;">
+                    <div class="contact-icon"><i class="fa-brands fa-facebook"></i></div>
+                    <h3>Redes Sociales</h3>
+                    <p>Facebook:<br>IE Academico</p>
+                </a>
+
+                <!-- Horario de Atención -->
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes<br>7:00 am - 5:00 pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enlace al archivo JavaScript independiente -->
+    <script src="scrip.js"></script>
+</body>
+</html>
