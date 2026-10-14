@@ -24,24 +24,20 @@ const datosTabs = {
                 <h3 style="color: var(--color-primary); font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 0.3rem;">Símbolos Institucionales &amp; Himno</h3>
                 <p style="font-size: 0.82rem; color: #475569; margin-bottom: 1rem;">Elementos que representan nuestra historia, identidad y el orgullo de pertenecer a la institución.</p>
                 
-                <!-- Apartado de Símbolos: Escudo, Bandera y Mascota -->
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem; margin-bottom: 1.2rem;">
                     
-                    <!-- Escudo -->
                     <div style="background: #ffffff; padding: 0.8rem; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center;">
                         <img src="img/escudo1.jpg" alt="Escudo Institucional" style="width: 55px; height: 55px; object-fit: contain; margin-bottom: 0.4rem;">
                         <h4 style="color: var(--color-primary); font-size: 0.9rem; margin-bottom: 0.2rem;">Escudo Institucional</h4>
                         <p style="font-size: 0.75rem; color: #475569; margin: 0;">Blasón heráldico que simboliza la ciencia, la fe, el honor y la tradición de nuestra casa de estudios.</p>
                     </div>
 
-                    <!-- Bandera -->
                     <div style="background: #ffffff; padding: 0.8rem; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center;">
                         <img src="img/bandera_institucional.jpg" alt="Bandera Institucional" style="width: 55px; height: 55px; object-fit: contain; margin-bottom: 0.4rem;">
                         <h4 style="color: var(--color-primary); font-size: 0.9rem; margin-bottom: 0.2rem;">Bandera Institucional</h4>
                         <p style="font-size: 0.75rem; color: #475569; margin: 0;">Emblema de libertad, paz y pertenencia que flamea con orgullo en nuestros actos solemnes.</p>
                     </div>
 
-                    <!-- Mascota -->
                     <div style="background: #ffffff; padding: 0.8rem; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center;">
                         <img src="img/mascota.jpg" alt="Mascota Institucional" style="width: 55px; height: 55px; object-fit: contain; margin-bottom: 0.4rem;">
                         <h4 style="color: var(--color-primary); font-size: 0.9rem; margin-bottom: 0.2rem;">Mascota Institucional</h4>
@@ -89,7 +85,6 @@ const datosTabs = {
                     Libre solo te hará la verdad.
                 </div>
 
-                <!-- Reproductor de YouTube -->
                 <h4 style="font-size: 0.95rem; color: var(--color-primary); margin-bottom: 0.4rem;">Video del Himno Institucional</h4>
                 <div style="position: relative; width: 100%; padding-bottom: 50%; height: 0; margin-bottom: 0.8rem; border-radius: 6px; overflow: hidden; border: 1px solid #cbd5e1;">
                     <iframe src="https://www.youtube.com/embed/Fnf5A0mMDsQ" title="Video Himno Académico" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
@@ -113,7 +108,6 @@ const datosTabs = {
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; text-align: left;">
                 
-                <!-- ACAMUN -->
                 <div onclick="verDetalleProyecto('acamun')" style="background: white; padding: 1.2rem; border-radius: 10px; border: 2px solid #cbd5e1; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" onmouseover="this.style.borderColor='var(--color-primary)'" onmouseout="this.style.borderColor='#cbd5e1'">
                     <img src="img/acamun.jpg" alt="ACAMUN" style="width: 100%; height: 120px; object-fit: cover; border-radius: 6px; margin-bottom: 0.8rem;">
                     <h4 style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 0.4rem;">ACAMUN <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 4px;"></i></h4>
@@ -125,7 +119,6 @@ const datosTabs = {
                     </div>
                 </div>
 
-                <!-- Sembradores de Vida -->
                 <div onclick="verDetalleProyecto('sembradores')" style="background: white; padding: 1.2rem; border-radius: 10px; border: 2px solid #cbd5e1; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" onmouseover="this.style.borderColor='var(--color-primary)'" onmouseout="this.style.borderColor='#cbd5e1'">
                     <img src="img/sembradores.jpg" alt="Sembradores de Vida" style="width: 100%; height: 120px; object-fit: cover; border-radius: 6px; margin-bottom: 0.8rem;">
                     <h4 style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 0.4rem;">Sembradores de Vida <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 4px;"></i></h4>
@@ -137,7 +130,6 @@ const datosTabs = {
                     </div>
                 </div>
 
-                <!-- Banda Filarmónica -->
                 <div onclick="verDetalleProyecto('banda')" style="background: white; padding: 1.2rem; border-radius: 10px; border: 2px solid #cbd5e1; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" onmouseover="this.style.borderColor='var(--color-primary)'" onmouseout="this.style.borderColor='#cbd5e1'">
                     <img src="img/banda.jpg" alt="Banda Filarmónica" style="width: 100%; height: 120px; object-fit: cover; border-radius: 6px; margin-bottom: 0.8rem;">
                     <h4 style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 0.4rem;">Banda Filarmónica <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 4px;"></i></h4>
@@ -157,7 +149,6 @@ const datosTabs = {
                 <h3 style="color: var(--color-primary); font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.3rem;">Nosotros &amp; Instalaciones</h3>
                 <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem;">Conoce nuestra oferta de servicios, liderazgo académico e infraestructura de primera.</p>
 
-                <!-- Destacado ICFES 2026 -->
                 <div style="background: linear-gradient(135deg, #1e3a8a, #0f172a); color: white; padding: 1rem; border-radius: 10px; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
                     <i class="fa-solid fa-trophy" style="font-size: 2.2rem; color: #f59e0b;"></i>
                     <div>
@@ -166,7 +157,6 @@ const datosTabs = {
                     </div>
                 </div>
 
-                <!-- Información General y Servicios -->
                 <div style="background: #ffffff; padding: 1rem; border-radius: 8px; border: 1px solid #cbd5e1; margin-bottom: 1.2rem;">
                     <h4 style="color: var(--color-primary); font-size: 1rem; margin-top: 0; margin-bottom: 0.6rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px;">Servicios &amp; Jornada Escolar</h4>
                     <ul style="font-size: 0.83rem; color: #334155; line-height: 1.7; padding-left: 1.2rem; margin: 0;">
@@ -176,7 +166,6 @@ const datosTabs = {
                     </ul>
                 </div>
 
-                <!-- Espacio 1: Instalaciones del Colegio -->
                 <div style="background: #ffffff; padding: 1rem; border-radius: 8px; border: 1px solid #cbd5e1; margin-bottom: 1.2rem;">
                     <h4 style="color: var(--color-primary); font-size: 1rem; margin-top: 0; margin-bottom: 0.6rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px;">Nuestras Instalaciones</h4>
                     <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.8rem;">Espacios diseñados para el desarrollo integral, tecnológico, cultural y deportivo:</p>
@@ -194,7 +183,6 @@ const datosTabs = {
                     </div>
                 </div>
 
-                <!-- Espacio 2: Deportes y Horarios Extracurriculares -->
                 <div style="background: #f0fdf4; padding: 1rem; border-radius: 8px; border: 1px solid #bbf7d0; margin-bottom: 1.2rem;">
                     <h4 style="color: #166534; font-size: 1rem; margin-top: 0; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 6px;">
                         <i class="fa-solid fa-medal"></i> Deportes &amp; Actividades Extracurriculares
@@ -212,10 +200,9 @@ const datosTabs = {
                     </div>
                 </div>
 
-                <!-- Galería de 4 Imágenes al final de Nosotros -->
                 <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.6rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px;">Galería de la Institución</h4>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-                    <img src="img/nosotros1.jpg" alt="Instalación 1" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1;">
+                    <img src="img/nosotros1.jpg" alt="Instalación 1" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px
                     <img src="img/nosotros2.jpg" alt="Instalación 2" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1;">
                     <img src="img/nosotros3.jpg" alt="Instalación 3" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1;">
                     <img src="img/nosotros4.jpg" alt="Instalación 4" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1;">
@@ -268,6 +255,47 @@ const detallesProyectos = {
     }
 };
 
+/* DATA DETALLADA DE NIVELES EDUCATIVOS */
+const detallesNiveles = {
+    preescolar: {
+        titulo: "Educación Preescolar (Jardín y Transición)",
+        descripcion: `
+            Nuestra propuesta en el nivel Preescolar estimula de manera armónica el desarrollo motriz, socioemocional, lingüístico y cognitivo de los niños en sus primeros años de formación.<br><br>
+            A través del juego, la exploración del medio, las expresiones artísticas y la interacción social en un entorno seguro y afectuoso, los más pequeños desarrollan autonomía, confianza y las habilidades socioemocionales necesarias para su iniciación en la vida escolar.
+        `,
+        fotos: ["img/preescolar1.jpg", "img/preescolar2.jpg", "img/preescolar3.jpg", "img/preescolar4.jpg"]
+    },
+    primaria: {
+        titulo: "Básica Primaria (Grados 1° a 5°)",
+        descripcion: `
+            La Básica Primaria se centra en la consolidación de competencias fundamentales en lectura crítica, escritura, razonamiento matemático, indagación científica y convivencia ciudadana.<br><br>
+            Fomentamos la curiosidad natural del estudiante mediante metodologías activas y transversales, integrando principios de responsabilidad, trabajo en equipo y amor por el conocimiento.
+        `,
+        fotos: ["img/primaria1.jpg", "img/primaria2.jpg", "img/primaria3.jpg", "img/primaria4.jpg"]
+    },
+    secundaria: {
+        titulo: "Básica Secundaria (Grados 6° a 9°)",
+        descripcion: `
+            En la Básica Secundaria profundizamos en el pensamiento crítico, analítico y científico. Los estudiantes abordan las áreas del saber a través del análisis de contextos reales y la realización de proyectos interdisciplinarios.<br><br>
+            En esta etapa se fortalece la toma de decisiones consciente, la oratoria, el liderazgo estudiantil y el desarrollo de habilidades clave para la preparación de su proyecto de vida.
+        `,
+        fotos: ["img/secundaria1.jpg", "img/secundaria2.jpg", "img/secundaria3.jpg", "img/secundaria4.jpg"]
+    },
+    media: {
+        titulo: "Media Técnica Especializada (Grados 10° y 11°)",
+        descripcion: `
+            El nivel de Media Técnica ofrece una sólida formación de articulación con el sector productivo y la educación superior. Los estudiantes adquieren competencias laborales y técnicas certificadas en diversas áreas:<br><br>
+            • <strong>Operaciones Logísticas:</strong> Cadena de suministro, almacenamiento e inventarios.<br>
+            • <strong>Contabilidad y Finanzas:</strong> Análisis financiero, contabilidad básica y administración.<br>
+            • <strong>Técnica Deportiva:</strong> Formación física, entrenamiento, salud y recreación.<br>
+            • <strong>Técnica Ambiental:</strong> Gestión ecológica, sostenibilidad y liderazgo en proyectos PRAE.<br>
+            • <strong>Técnica Musical:</strong> Teoría musical, ejecución instrumental y expresión artística.
+        `,
+        fotos: ["img/media1.jpg", "img/media2.jpg", "img/media3.jpg", "img/media4.jpg"]
+    }
+};
+
+/* FUNCIONES DE NAVEGACIÓN Y DETALLE */
 function switchTab(tabName) {
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
     
@@ -316,7 +344,6 @@ function verDetalleProyecto(clave) {
 
                 <h4 style="font-size: 1rem; color: #1e293b; margin-bottom: 0.6rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px;">Galería Fotográfica</h4>
                 
-                <!-- Cuadrícula profesional de 4 fotos -->
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
                     <img src="${p.fotos[0]}" alt="Foto 1" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1;">
                     <img src="${p.fotos[1]}" alt="Foto 2" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1;">
@@ -326,5 +353,79 @@ function verDetalleProyecto(clave) {
             </div>
         `;
         bodyTab.style.opacity = 1;
+    }, 200);
+}
+
+/* FUNCIÓN DESPLEGABLE PARA NIVELES EDUCATIVOS */
+function verDetalleNivel(clave) {
+    const n = detallesNiveles[clave];
+    const container = document.getElementById('academic-container');
+
+    container.style.opacity = 0;
+
+    setTimeout(() => {
+        container.innerHTML = `
+            <div style="background: #ffffff; padding: 1.5rem; border-radius: 12px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: left;">
+                <button onclick="restaurarNiveles()" style="background: #e2e8f0; border: none; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer; margin-bottom: 1.2rem; color: #334155; display: inline-flex; align-items: center; gap: 6px;">
+                    <i class="fa-solid fa-arrow-left"></i> Volver a Niveles Educativos
+                </button>
+                
+                <h3 style="color: var(--color-primary); font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.6rem;">${n.titulo}</h3>
+                <div style="font-size: 0.92rem; color: #334155; line-height: 1.7; margin-bottom: 1.5rem;">${n.descripcion}</div>
+
+                <h4 style="font-size: 1.05rem; color: #1e293b; margin-bottom: 0.8rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px;">Galería Fotográfica del Nivel</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                    <img src="${n.fotos[0]}" alt="Foto Nivel 1" style="width: 100%; height: 140px; object-fit: cover; border-radius: 8px; border: 1px solid #cbd5e1;">
+                    <img src="${n.fotos[1]}" alt="Foto Nivel 2" style="width: 100%; height: 140px; object-fit: cover; border-radius: 8px; border: 1px solid #cbd5e1;">
+                    <img src="${n.fotos[2]}" alt="Foto Nivel 3" style="width: 100%; height: 140px; object-fit: cover; border-radius: 8px; border: 1px solid #cbd5e1;">
+                    <img src="${n.fotos[3]}" alt="Foto Nivel 4" style="width: 100%; height: 140px; object-fit: cover; border-radius: 8px; border: 1px solid #cbd5e1;">
+                </div>
+            </div>
+        `;
+        container.style.opacity = 1;
+    }, 200);
+}
+
+function restaurarNiveles() {
+    const container = document.getElementById('academic-container');
+    container.style.opacity = 0;
+
+    setTimeout(() => {
+        container.innerHTML = `
+            <div class="academic-grid">
+                <div class="academic-card" onclick="verDetalleNivel('preescolar')" style="cursor: pointer;">
+                    <div class="academic-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <span class="grade-tag">Jardín y Transición</span>
+                    <h3>Preescolar <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 6px;"></i></h3>
+                    <p>Formación integral temprana con enfoque en desarrollo cognitivo, emocional, motriz y social del niño.</p>
+                    <span style="color: var(--color-primary); font-weight: 600; font-size: 0.8rem; margin-top: 10px; display: inline-block;">Ver información y fotos →</span>
+                </div>
+
+                <div class="academic-card" onclick="verDetalleNivel('primaria')" style="cursor: pointer;">
+                    <div class="academic-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <span class="grade-tag">1° a 5°</span>
+                    <h3>Básica Primaria <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 6px;"></i></h3>
+                    <p>Cimientos académicos sólidos con metodologías activas, lectura crítica y pensamiento lógico-matemático.</p>
+                    <span style="color: var(--color-primary); font-weight: 600; font-size: 0.8rem; margin-top: 10px; display: inline-block;">Ver información y fotos →</span>
+                </div>
+
+                <div class="academic-card" onclick="verDetalleNivel('secundaria')" style="cursor: pointer;">
+                    <div class="academic-icon"><i class="fa-solid fa-flask"></i></div>
+                    <span class="grade-tag">6° a 9°</span>
+                    <h3>Básica Secundaria <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 6px;"></i></h3>
+                    <p>Profundización en ciencias, humanidades, arte y tecnología con proyectos interdisciplinarios.</p>
+                    <span style="color: var(--color-primary); font-weight: 600; font-size: 0.8rem; margin-top: 10px; display: inline-block;">Ver información y fotos →</span>
+                </div>
+
+                <div class="academic-card tecnica-full-card" onclick="verDetalleNivel('media')" style="cursor: pointer;">
+                    <div class="academic-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="grade-tag">10° y 11°</span>
+                    <h3>Media Técnica Especializada <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; float: right; margin-top: 6px;"></i></h3>
+                    <p>Contamos con formaciones técnicas de alta calidad orientadas al éxito profesional y laboral en Operaciones Logísticas, Contabilidad, Deportivo, Ambiental y Musical.</p>
+                    <span style="color: var(--color-primary); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Explorar especializaciones técnicas y fotos →</span>
+                </div>
+            </div>
+        `;
+        container.style.opacity = 1;
     }, 200);
 }
